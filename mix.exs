@@ -4,7 +4,7 @@ defmodule ShadowAITools.MixProject do
   def project,
     do: [
       app: :shadowaitools,
-      version: "1.0.0",
+      version: "1.0.1",
       elixir: "~> 1.14",
       description: "Elixir client for Shadow AI Tools.",
       package: package(),

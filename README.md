@@ -1,6 +1,6 @@
 # ShadowAITools
 
-Turn a network log into a list of the AI tools people actually use. `ShadowAITools` reads a DNS, proxy or firewall export, extracts every hostname, and looks each one up against the AI tool register. You get back which hosts are AI products, what they do, and how their vendors treat your data. The hosted version, with PDF reports, is at [log audits that surface hidden AI tools](https://www.shadowaitools.com). This package brings the same check into Elixir code, Livebook notebooks and scheduled jobs.
+Turn a network log into a list of the AI tools people actually use. `ShadowAITools` reads a DNS, proxy or firewall export, extracts every hostname, and looks each one up against the AI tool register. You get back which hosts are AI products, what they do, and how their vendors treat your data. The hosted version, with PDF reports, is the [shadow AI audit service](https://www.shadowaitools.com/shadow-audit.php). This package brings the same check into Elixir code, Livebook notebooks and scheduled jobs.
 
 ## Installation
 
@@ -109,7 +109,7 @@ Knowing which AI systems are in use is a starting requirement in the EU AI Act, 
 
 ## Data behind the scan
 
-Answers come from the register that holds [category and training data for each AI domain](https://www.aitoolsblocklist.com). For [labels for the non-AI remainder of a log](https://www.urlcategorizationdatabase.com), use the URL category data. If some of what you find is automated agents, give them [limits for autonomous agents on the web](https://www.aiagentallowlist.com).
+Answers come from the same register used by [compliance tools for unapproved AI use](https://www.aitoolsblocklist.com/shadow-ai-audit.php). For a [category check](https://www.urlcategorizationdatabase.com/check-domain.php) on the non-AI remainder of a log, use the URL category data. If some of what you find is automated agents, give them an [AI agent allow list, priced per lookup](https://www.aiagentallowlist.com/pricing.php).
 
 The same scanner is available as [a Go module for command-line scanners](https://pkg.go.dev/github.com/explainableaixai/shadowaitools-go) and on [pub.dev for Dart](https://pub.dev/packages/shadowaitools).
 
